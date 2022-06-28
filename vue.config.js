@@ -6,14 +6,14 @@ module.exports = defineConfig({
   transpileDependencies: [
     'quasar'
   ],
-  devServer: {
-    port: 3000,
-    https: {
-      key: fs.readFileSync(path.resolve(`${homedir}/.office-addin-dev-certs/localhost.key`)),
-      cert: fs.readFileSync(path.resolve(`${homedir}/.office-addin-dev-certs/localhost.crt`)),
-      ca: fs.readFileSync(path.resolve(`${homedir}/.office-addin-dev-certs/ca.crt`)),
-     }
-   },
+  // devServer: {
+  //   port: 3000,
+  //   https: {
+  //     key: fs.readFileSync(path.resolve(`${homedir}/.office-addin-dev-certs/localhost.key`)),
+  //     cert: fs.readFileSync(path.resolve(`${homedir}/.office-addin-dev-certs/localhost.crt`)),
+  //     ca: fs.readFileSync(path.resolve(`${homedir}/.office-addin-dev-certs/ca.crt`)),
+  //    }
+  //  },
   pluginOptions: {
     quasar: {
       importStrategy: 'kebab',
